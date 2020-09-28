@@ -72,15 +72,31 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:0
 -- DELETE FROM people
 -- WHERE name = 'Eric Cartman';
 
--- INSERT INTO movies (
--- 	title,
--- 	year,
--- 	show_time
--- ) VALUES (
--- 	'Avengers: Infinity War',
--- 	2018,
--- 	'00:00'
--- );
+INSERT INTO movies (
+	title,
+	year,
+	show_time
+) VALUES (
+	'Avengers: Infinity War',
+	2018,
+	'00:00'
+),
+('Captain Marvel',
+2019,
+'18:45'
+),
+('Avengers Endgame',
+2019,
+'03:00'
+),
+('Ant Man and the Wasp',
+2018,
+'17:00'
+),
+('Spiderman: Far from Home',
+2019,
+'21:55'
+);
 
 -- SELECT * FROM movies;
 
@@ -100,3 +116,8 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:0
 -- WHERE year BETWEEN 2015 AND 2018;
 
 -- SELECT * FROM movies;
+
+DELETE FROM movies
+WHERE title IN('Iron Man', 'Iron Man 2', 'Iron Man 3');
+
+SELECT * FROM movies;
